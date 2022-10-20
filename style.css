@@ -1,6 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/titillium');
-@import url('http://fonts.cdnfonts.com/css/fragment-mono');
-@import url('http://fonts.cdnfonts.com/css/vogue-2');
 
 body h1,
 h2,
@@ -8,7 +5,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Titillium', 'Vogue' sans-serif;
+   
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 
 }
 
@@ -17,7 +15,7 @@ a,
 p,
 button,
 strong {
-    font-family: 'Titillium', 'Vogue' sans-serif;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 
 }
 
@@ -91,6 +89,44 @@ strong {
 .l-button:hover {
     color: #ff4081 !important;
     border: 1px solid #fff;
+
+}
+
+
+.ds-button {
+    top: 50px;
+    text-decoration: none;
+    color: #fff !important;
+    border: 3px solid #000;
+    font-weight: 400;
+    padding: 22px 22px;
+    font-size: 16px;
+    border-radius: 55px;
+    position: relative;
+    z-index: 1;
+}
+
+.ds-button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background-color: #72dfe9;
+    border-radius: 35px;
+    z-index: -1;
+    transition: .4s;
+}
+
+.ds-button:hover:before {
+    top: 0;
+    left: 0;
+}
+
+.ds-button:hover {
+    color: #ff4081 !important;
+    border: 3px solid #fff;
 
 }
 
@@ -332,7 +368,6 @@ ul.menu-bar .menuli ul li a:hover {
 
 #container {
     color: #999;
-    text-transform: uppercase;
     font-size: 36px;
     font-weight: bold;
     padding-top: 100px;
@@ -341,7 +376,7 @@ ul.menu-bar .menuli ul li a:hover {
     bottom: 45%;
     display: block;
     margin: 40px 0;
-    font-family: 'Vogue', sans-serif;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 #flip {
@@ -355,7 +390,7 @@ ul.menu-bar .menuli ul li a:hover {
     height: 45px;
     margin-bottom: 45px;
     display: inline-block;
-    font-family: 'Vogue', sans-serif;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 #flip div:first-child {
@@ -415,7 +450,7 @@ ul.menu-bar .menuli ul li a:hover {
 /* video container */
 .videoContainer {
     width: 380px;
-    height: 263px;
+    height: 200px;
     position: relative;
     overflow: hidden;
     background: #000;
