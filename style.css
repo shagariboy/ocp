@@ -1,0 +1,631 @@
+@import url('http://fonts.cdnfonts.com/css/titillium');
+@import url('http://fonts.cdnfonts.com/css/fragment-mono');
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Titillium', sans-serif;
+
+}
+
+body span,
+a,
+p,
+button,
+strong {
+    font-family: 'Titillium', sans-serif;
+
+}
+
+/* defult css */
+.d-button {
+    text-decoration: none;
+    color: #fff !important;
+    border: 1px solid #000;
+    font-weight: 400;
+    padding: 9px 22px;
+    font-size: 16px;
+    border-radius: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.d-button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background-color: #72dfe9;
+    border-radius: 35px;
+    z-index: -1;
+    transition: .4s;
+}
+
+.d-button:hover:before {
+    top: 0;
+    left: 0;
+}
+
+.d-button:hover {
+    color: #ff4081 !important;
+    border: 1px solid #fff;
+
+}
+
+.l-button {
+    text-decoration: none;
+    color: #fff !important;
+    border: 1px solid #000;
+    font-weight: 400;
+    padding: 9px 22px;
+    font-size: 16px;
+    border-radius: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.l-button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background-color: #ffb5b5;
+    border-radius: 35px;
+    z-index: -1;
+    transition: .4s;
+}
+
+.l-button:hover:before {
+    top: 0;
+    left: 0;
+}
+
+.l-button:hover {
+    color: #ff4081 !important;
+    border: 1px solid #fff;
+
+}
+
+/* main css */
+body {
+    background-color: #0551c2;
+}
+
+/* header-section */
+.header-section {
+    margin-bottom: 80px;
+	background: rgb(255,255,255);
+background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(5,81,194,1) 12%);
+}
+
+.navbar-brand {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+    .logo {
+        max-width: 210px;
+    }
+}
+
+.logo {
+    padding: 0;
+}
+
+.logo-container {
+    border-radius: 20px;
+    background: #fff;
+    max-height: 88px;
+    padding: 25px 25px;
+}
+
+.company-logo.large-menu {
+    max-height: 42px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.company-logo.small-menu {
+    display: none;
+}
+
+ul.menu-bar {
+    list-style: none;
+}
+
+ul.menu-bar .menuhvr {
+    position: relative;
+}
+
+ul.menu-bar .menuli a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 15px;
+    color: #fff;
+    transition: .4s;
+}
+
+/* before */
+ul.menu-bar .menuhvr::before {
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: #ff4081;
+    position: absolute;
+    left: 44%;
+    bottom: 5px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+ul.menu-bar .menuhvr:hover::before {
+    bottom: -12px;
+    width: 7px;
+    height: 7px;
+}
+
+ul.menu-bar li a:hover {
+    color: #ff4081;
+}
+
+ul.menu-bar li .active {
+    color: #ff4081;
+    position: relative;
+}
+
+ul.menu-bar .menuli .active::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #ff4081;
+    position: absolute;
+    left: 44%;
+    bottom: -12px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+/* Dropdown-menu */
+ul.menu-bar .menuli {
+    position: relative;
+    transition: .4s;
+}
+
+ul.menu-bar .menuli ul {
+    list-style: none;
+    position: absolute;
+    top: 170%;
+    left: 0;
+    width: 204px;
+    border: 2px solid #000;
+    padding: 15px 0;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+ul.menu-bar .menuli ul li {
+    margin-left: 0;
+    transition: .4s;
+    position: relative;
+}
+
+ul.menu-bar .menuli ul li a {
+    display: block;
+    padding: 3px 0;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+ul.menu-bar .menuli:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+ul.menu-bar .menuli ul li::after {
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: #ff4081;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+ul.menu-bar li ul li:hover::after {
+    width: 7px;
+    height: 7px;
+}
+
+ul.menu-bar .menuli ul li:hover {
+    margin-left: 18px;
+
+}
+
+ul.menu-bar .menuli ul li a:hover {
+    color: #ff4081;
+}
+
+
+/* header info */
+.social-m-icon {
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0) !important;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.social-m-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.social-m-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background-color: #ffb5b5;
+    border-radius: 50%;
+    z-index: -1;
+    transition: .4s;
+}
+
+.social-m-icon:hover::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.social-m-icon:hover::before {
+    border: none;
+}
+
+.social-m-icon:hover {
+    color: #fff !important;
+}
+
+/* user-experience */
+
+
+#container {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 200px;
+    position: relative;
+    width: 100%;
+    bottom: 45%;
+    display: block;
+    margin: 40px 0;
+    font-family: 'Fragment Mono', sans-serif;
+}
+
+#flip {
+    height: 50px;
+    overflow: hidden;
+}
+
+#flip>div>div {
+    color: #fff;
+    padding: 1px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-family: 'Fragment Mono', sans-serif;
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#flip div div {
+    background: #42c58a;
+}
+
+#flip div:first-child div {
+    background: #4ec7f3;
+}
+
+#flip div:last-child div {
+    background: #DC143C;
+}
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+
+p {
+    position: fixed;
+    width: 100%;
+    bottom: 30px;
+    font-size: 12px;
+    color: #999;
+    margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+/* video container */
+.videoContainer {
+    width: 380px;
+    height: 263px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    color: #ccc;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 50px auto 0;
+}
+
+.videoContainer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3);
+    z-index: 6;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+/* video caption css */
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    border-radius: 6px 6px 0 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+/*** VIDEO CONTROLS CSS ***/
+/* control holder */
+.control {
+    color: #ccc;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 360px;
+    z-index: 5;
+    display: none;
+}
+
+/* control bottom part */
+.btmControl {
+    clear: both;
+}
+
+.control .btnPlay {
+    float: left;
+    width: 34px;
+    height: 30px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.control .icon-play {
+    background: url(https://s.cdpn.io/6035/vp_sprite.png) no-repeat -11px 0;
+    width: 6px;
+    height: 9px;
+    display: block;
+    margin: 4px 0 0 8px;
+}
+
+.control .icon-pause {
+    background: url(https://s.cdpn.io/6035/vp_sprite.png) no-repeat -34px -1px;
+    width: 8px;
+    height: 9px;
+    display: block;
+    margin: 4px 0 0 8px;
+}
+
+.control .selected {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.control .sound {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: none;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.control .icon-sound {
+    background: url(https://s.cdpn.io/6035/vp_sprite.png) no-repeat -19px 0;
+    width: 13px;
+    height: 10px;
+    display: block;
+    margin: 8px 0 0 8px;
+}
+
+.control .muted .icon-sound {
+    width: 7px !important;
+}
+
+.control .btnFS {
+    width: 30px;
+    height: 30px;
+    border-radius: 0 6px 6px 0;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: none;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.control .icon-fullscreen {
+    background: url(https://s.cdpn.io/6035/vp_sprite.png) no-repeat 0 0;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 8px 0 0 9px;
+}
+
+/* PROGRESS BAR CSS */
+/* Progress bar */
+.progress-bar {
+    height: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: none;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+    float: left;
+}
+
+.progress {
+    width: 240px;
+    height: 7px;
+    position: relative;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    /* fallback */
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 1px black;
+    border-radius: 10px;
+}
+
+.progress span {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 10px;
+}
+
+.timeBar {
+    z-index: 10;
+    width: 0;
+    background: -webkit-linear-gradient(top, #6bcce2 0%, #1da3d0 100%);
+    box-shadow: 0 0 7px rgba(107, 204, 226, 0.5);
+}
+
+.bufferBar {
+    z-index: 5;
+    width: 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* VOLUME BAR CSS */
+/* volume bar */
+.volume {
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    height: 10px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.volumeBar {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    z-index: 10;
+}
