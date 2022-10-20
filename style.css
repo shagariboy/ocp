@@ -1,5 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/titillium');
 @import url('http://fonts.cdnfonts.com/css/fragment-mono');
+@import url('http://fonts.cdnfonts.com/css/vogue-2');
 
 body h1,
 h2,
@@ -7,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Titillium', sans-serif;
+    font-family: 'Titillium', 'Vogue' sans-serif;
 
 }
 
@@ -16,7 +17,7 @@ a,
 p,
 button,
 strong {
-    font-family: 'Titillium', sans-serif;
+    font-family: 'Titillium', 'Vogue' sans-serif;
 
 }
 
@@ -100,7 +101,7 @@ body {
 
 /* header-section */
 .header-section {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 	background: rgb(255,255,255);
 background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(5,81,194,1) 12%);
 }
@@ -271,6 +272,7 @@ ul.menu-bar .menuli ul li a:hover {
 
 
 /* header info */
+
 .social-m-icon {
     text-decoration: none;
     font-size: 20px;
@@ -339,7 +341,7 @@ ul.menu-bar .menuli ul li a:hover {
     bottom: 45%;
     display: block;
     margin: 40px 0;
-    font-family: 'Fragment Mono', sans-serif;
+    font-family: 'Vogue', sans-serif;
 }
 
 #flip {
@@ -349,11 +351,11 @@ ul.menu-bar .menuli ul li a:hover {
 
 #flip>div>div {
     color: #fff;
-    padding: 1px 12px;
+    padding: 2px 12px;
     height: 45px;
     margin-bottom: 45px;
     display: inline-block;
-    font-family: 'Fragment Mono', sans-serif;
+    font-family: 'Vogue', sans-serif;
 }
 
 #flip div:first-child {
@@ -405,20 +407,6 @@ ul.menu-bar .menuli ul li a:hover {
         margin-top: -270px;
     }
 }
-
-p {
-    position: fixed;
-    width: 100%;
-    bottom: 30px;
-    font-size: 12px;
-    color: #999;
-    margin-top: 200px;
-}
-
-
-
-
-
 
 
 
